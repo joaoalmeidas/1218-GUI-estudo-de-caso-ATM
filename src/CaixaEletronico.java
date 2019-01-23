@@ -64,6 +64,5 @@ public class CaixaEletronico extends JFrame {
 		depositoESaque.add(sacaDinheiro);
 		depositoESaque.add(insereEnvelope);
 		
-		
 	}
 }
