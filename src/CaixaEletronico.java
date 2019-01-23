@@ -1,8 +1,8 @@
+import java.awt.Font;
 import java.awt.GridLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -39,7 +39,8 @@ public class CaixaEletronico extends JFrame {
 		painelUsuario.add(teclado);
 		painelUsuario.add(depositoESaque);
 		
-		infoTela = new JTextArea("1 - 20; 2 - 200");
+		infoTela = new JTextArea();
+		infoTela.setText(String.format("1 - 20	2 - 50	3 - 100	4 - 200"));
 		infoTela.setEditable(false);
 		entradaUsuario = new JTextField(20);
 		
