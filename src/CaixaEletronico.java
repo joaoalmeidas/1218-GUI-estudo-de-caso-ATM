@@ -15,7 +15,6 @@ public class CaixaEletronico extends JFrame {
 	private JPanel painelUsuario;
 	
 	private JTextArea infoTela;
-	private JLabel labelEntradaUsuario;
 	private JTextField entradaUsuario;
 	
 	private JButton[] tecladoNumerico;
@@ -29,7 +28,7 @@ public class CaixaEletronico extends JFrame {
 		super("Caixa Eletrônio");
 		setLayout(new GridLayout(2, 1));
 		
-		tela = new JPanel(new GridLayout(3, 1));
+		tela = new JPanel(new GridLayout(2, 1));
 		teclado = new JPanel(new GridLayout(4, 3));
 		depositoESaque = new JPanel(new GridLayout(2, 1));
 		painelUsuario = new JPanel(new GridLayout(1, 2));
@@ -42,11 +41,9 @@ public class CaixaEletronico extends JFrame {
 		
 		infoTela = new JTextArea("1 - 20; 2 - 200");
 		infoTela.setEditable(false);
-		labelEntradaUsuario = new JLabel("Escolha uma quantia para sacar:");
 		entradaUsuario = new JTextField(20);
 		
 		tela.add(infoTela);
-		tela.add(labelEntradaUsuario);
 		tela.add(entradaUsuario);
 		
 		tecladoNumerico = new JButton[numeros.length];
