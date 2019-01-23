@@ -10,6 +10,7 @@ public class CaixaEletronico extends JFrame {
 	private JPanel tela;
 	private JPanel teclado;
 	private JPanel depositoESaque;
+	private JPanel painelUsuario;
 	
 	private JTextArea infoTela;
 	private JLabel labelEntradaUsuario;
